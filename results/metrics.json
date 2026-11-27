@@ -1,0 +1,322 @@
+{
+  "dataset": {
+    "name": "scikit-learn digits (8x8 handwritten digit images)",
+    "samples": 1797,
+    "classes": 10,
+    "train_size": 1437,
+    "test_size": 360,
+    "test_fraction": 0.2,
+    "random_state": 42,
+    "stratified_split": true
+  },
+  "experiments": [
+    {
+      "feature_variant": "hog32",
+      "model": "SVM (RBF)",
+      "accuracy": 0.9888888888888889,
+      "macro_f1": 0.9888084519292313,
+      "train_seconds": 0.713,
+      "feature_count": 324
+    },
+    {
+      "feature_variant": "hog32",
+      "model": "k-NN (k=5)",
+      "accuracy": 0.9888888888888889,
+      "macro_f1": 0.9888073327796839,
+      "train_seconds": 0.046,
+      "feature_count": 324
+    },
+    {
+      "feature_variant": "hybrid",
+      "model": "k-NN (k=5)",
+      "accuracy": 0.9888888888888889,
+      "macro_f1": 0.9887682104805393,
+      "train_seconds": 0.0446,
+      "feature_count": 580
+    },
+    {
+      "feature_variant": "hybrid",
+      "model": "Logistic Regression",
+      "accuracy": 0.9888888888888889,
+      "macro_f1": 0.9887262194036431,
+      "train_seconds": 0.0424,
+      "feature_count": 580
+    },
+    {
+      "feature_variant": "hybrid",
+      "model": "SVM (RBF)",
+      "accuracy": 0.9861111111111112,
+      "macro_f1": 0.9859852282285348,
+      "train_seconds": 1.1653,
+      "feature_count": 580
+    },
+    {
+      "feature_variant": "raw8",
+      "model": "SVM (RBF)",
+      "accuracy": 0.9805555555555555,
+      "macro_f1": 0.9805015284652674,
+      "train_seconds": 0.3496,
+      "feature_count": 64
+    },
+    {
+      "feature_variant": "gray32",
+      "model": "SVM (RBF)",
+      "accuracy": 0.9777777777777777,
+      "macro_f1": 0.9778621184615895,
+      "train_seconds": 1.5435,
+      "feature_count": 1024
+    },
+    {
+      "feature_variant": "hog32",
+      "model": "Logistic Regression",
+      "accuracy": 0.9777777777777777,
+      "macro_f1": 0.9777659361905936,
+      "train_seconds": 0.0363,
+      "feature_count": 324
+    },
+    {
+      "feature_variant": "raw8",
+      "model": "Logistic Regression",
+      "accuracy": 0.9722222222222222,
+      "macro_f1": 0.9719402197048348,
+      "train_seconds": 0.0321,
+      "feature_count": 64
+    },
+    {
+      "feature_variant": "gray32",
+      "model": "k-NN (k=5)",
+      "accuracy": 0.9694444444444444,
+      "macro_f1": 0.9691762080244557,
+      "train_seconds": 0.0618,
+      "feature_count": 1024
+    },
+    {
+      "feature_variant": "raw8",
+      "model": "k-NN (k=5)",
+      "accuracy": 0.9638888888888889,
+      "macro_f1": 0.9634399725952825,
+      "train_seconds": 0.0987,
+      "feature_count": 64
+    },
+    {
+      "feature_variant": "gray32",
+      "model": "Logistic Regression",
+      "accuracy": 0.9611111111111111,
+      "macro_f1": 0.9603862569234479,
+      "train_seconds": 0.8861,
+      "feature_count": 1024
+    }
+  ],
+  "best": {
+    "feature_variant": "hog32",
+    "model": "SVM (RBF)",
+    "accuracy": 0.9888888888888889,
+    "macro_f1": 0.9888084519292313,
+    "train_seconds": 0.713,
+    "feature_count": 324
+  },
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 0.9722222222222222,
+      "f1-score": 0.9859154929577465,
+      "support": 36.0
+    },
+    "1": {
+      "precision": 0.972972972972973,
+      "recall": 1.0,
+      "f1-score": 0.9863013698630136,
+      "support": 36.0
+    },
+    "2": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 35.0
+    },
+    "3": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 37.0
+    },
+    "4": {
+      "precision": 0.972972972972973,
+      "recall": 1.0,
+      "f1-score": 0.9863013698630136,
+      "support": 36.0
+    },
+    "5": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 37.0
+    },
+    "6": {
+      "precision": 1.0,
+      "recall": 0.9722222222222222,
+      "f1-score": 0.9859154929577465,
+      "support": 36.0
+    },
+    "7": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 36.0
+    },
+    "8": {
+      "precision": 0.9714285714285714,
+      "recall": 0.9714285714285714,
+      "f1-score": 0.9714285714285714,
+      "support": 35.0
+    },
+    "9": {
+      "precision": 0.9722222222222222,
+      "recall": 0.9722222222222222,
+      "f1-score": 0.9722222222222222,
+      "support": 36.0
+    },
+    "accuracy": 0.9888888888888889,
+    "macro avg": {
+      "precision": 0.9889596739596739,
+      "recall": 0.9888095238095238,
+      "f1-score": 0.9888084519292313,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.9890390390390391,
+      "recall": 0.9888888888888889,
+      "f1-score": 0.9888878170085964,
+      "support": 360.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      35,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      36,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      35,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      37,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      36,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      37,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      35,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      36,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      34,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      35
+    ]
+  ],
+  "form_segmentation": {
+    "image": "C:\\Users\\Gaur Sundar Ghosh\\Documents\\Default Project\\Handwritten_Digit_Recognition_Project\\data\\samples\\form_3014.png",
+    "expected": "3014",
+    "predicted": "3014",
+    "segments": 4,
+    "correct": true
+  }
+}

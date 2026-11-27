@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+*.joblib
+results/*.png
+results/*.csv
+data/samples/*.png
